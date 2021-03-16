@@ -1,0 +1,29 @@
+{
+  "name": "sample/screenshoter",
+  "description": "sample screenshoter",
+  "type": "project",
+  "license": "proprietary",
+  "version": "1.0.0",
+  "config": {
+    "vendor-dir": "./vendor/",
+    "platform": {
+      "php": "7.4"
+    },
+    "optimize-autoloader": true,
+    "sort-packages": true
+  },
+  "require": {
+    "php": ">=7.4.0",
+    "ext-sockets": "*",
+    "nesk/puphpeteer": "^2.0",
+    "vlucas/phpdotenv": "^5.3"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "Screenshoter\\": "app/"
+    }
+  }
+}
